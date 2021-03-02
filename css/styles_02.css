@@ -1,0 +1,188 @@
+
+a {
+  color: #11999E;
+  font-family: 'Antic Slab', serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+a:hover {
+  color: #EAF6F6;
+}
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: #40514E;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: #66BFBF;
+}
+h2 {
+  font-family: 'Antic Slab', serif;
+  font-size: 2.5rem;
+  margin: 10px auto;
+  color: #66BFBF;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+h3 {
+  font-family: 'Antic Slab', serif;
+  font-size: 1.5rem;
+  color: #11999E;
+}
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+p {
+  margin: 0;
+  line-height: 2;
+}
+.title {
+  font-size: 1.5rem;
+}
+.intro {
+  width: 30%;
+  margin: auto;
+}
+.pro {
+  text-decoration: underline;
+}
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.titi {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+.tete {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+
+}
+.top-container {
+  background-color: #e6f8f6;
+  position: relative;
+  padding-top: 100px;
+}
+.middle-container {
+  margin: 100px 0;
+}
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+.text1 {
+  clear: left;
+}
+.text2 {
+  clear: right;
+}
+.contact-msg {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+.btn {
+   background: #11CDD4;
+   background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+   background-image: -webkit-gradient(to bottom, #11CDD4, #11999E);
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   height: 18px;
+   line-height: 18px;
+   color: #EAF6F6;
+   font-family: 'Antic Slab', serif;
+   width: 135px;
+   font-size: 18px;
+   font-weight: 100;
+   padding: 18px;
+   text-shadow: 1px 1px 20px #000000;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover {
+   border: solid #337FED 1px;
+   background: #30E3CB;
+   background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+   background-image: -webkit-gradient(to bottom, #30E3CB, #2BC4AD);
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   text-decoration: none;
+}
+}
+/* Length units
+The format of a length value is an optional sign character ('+' or '-', with '+' being the default) immediately followed by a number (with or without a decimal point) immediately followed by a unit identifier (a two-letter abbreviation). After a '0' number, the unit identifier is optional.
+Some properties allow negative length units, but this may complicate the formatting model and there may be implementation-specific limits. If a negative length value cannot be supported, it should be clipped to the nearest value that can be supported.
+There are two types of length units: relative and absolute. Relative units specify a length relative to another length property. Style sheets that use relative units will more easily scale from one medium to another (e.g. from a computer display to a laser printer). Percentage units (described below) and keyword values (e.g. 'x-large') offer similar advantages.
+These relative units are supported:
+
+H1 { margin: 0.5em }       ems, the height of the element's font
+H1 { margin: 1ex }         x-height, ~ the height of the letter 'x'
+P  { font-size: 12px }     pixels, relative to canvas
+
+The relative units 'em' and 'ex' are relative to the font size of the element itself. The only exception to this rule in CSS1 is the 'font-size' property where 'em' and 'ex' values refer to the font size of the parent element.
+Pixel units, as used in the last rule, are relative to the resolution of the canvas, i.e. most often a computer display. If the pixel density of the output device is very different from that of a typical computer display, the UA should rescale pixel values. The suggested reference pixel is the visual angle of one pixel on a device with a pixel density of 90dpi and a distance from the reader of an arm's length. For a nominal arm's length of 28 inches, the visual angle is about 0.0227 degrees.
+Child elements inherit the computed value, not the relative value:
+
+BODY {
+  font-size: 12pt;
+  text-indent: 3em;   i.e. 36pt
+}
+H1 { font-size: 15pt }
+
+In the example above, the 'text-indent' value of 'H1' elements will be 36pt, not 45pt.
+Absolute length units are only useful when the physical properties of the output medium are known. These absolute units are supported:
+
+H1 { margin: 0.5in }       inches, 1in = 2.54cm
+H2 { line-height: 3cm }    centimeters
+H3 { word-spacing: 4mm }   millimeters
+H4 { font-size: 12pt }     points, 1pt = 1/72 in
+H4 { font-size: 1pc }      picas, 1pc = 12pt
+
+-------
+Set Font Size With Em
+To allow users to resize the text (in the browser menu), many developers use em instead of pixels.
+
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+
+The size can be calculated from pixels to em using this formula: pixels/16=em
+
+*/
